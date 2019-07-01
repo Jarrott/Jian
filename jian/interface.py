@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 """
-@ Created by Seven on  2019/01/19 <https://www.soo9s.com>
+@ Created by Seven on  2019/01/19 <https://7yue.in>
 """
 from datetime import datetime
 
@@ -155,7 +155,7 @@ class InfoCrud(db.Model, MixinJSONSerializer):
 
 
 class UserInterface(InfoCrud):
-    __tablename__ = 'lin_user'
+    __tablename__ = 'jian_user'
 
     id = Column(Integer, primary_key=True)
     nickname = Column(String(24), nullable=False, unique=True)
@@ -209,7 +209,7 @@ class UserInterface(InfoCrud):
 
 
 class AuthInterface(BaseCrud):
-    __tablename__ = 'lin_auth'
+    __tablename__ = 'jian_auth'
 
     id = Column(Integer, primary_key=True)
     # : belongs to which group
@@ -224,7 +224,7 @@ class AuthInterface(BaseCrud):
 
 
 class GroupInterface(BaseCrud):
-    __tablename__ = 'lin_group'
+    __tablename__ = 'jian_group'
 
     id = Column(Integer, primary_key=True)
     # : name of group
@@ -236,7 +236,7 @@ class GroupInterface(BaseCrud):
 
 
 class LogInterface(BaseCrud):
-    __tablename__ = 'lin_log'
+    __tablename__ = 'jian_log'
 
     id = Column(Integer, primary_key=True)
     # : log message
@@ -272,7 +272,7 @@ class LogInterface(BaseCrud):
 
 
 class EventInterface(BaseCrud):
-    __tablename__ = 'lin_event'
+    __tablename__ = 'jian_event'
     id = Column(Integer, primary_key=True)
     # : belongs to which group
     group_id = Column(Integer, nullable=False)

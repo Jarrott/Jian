@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 """
-@ Created by Seven on  2019/01/19 <https://www.soo9s.com>
+@ Created by Seven on  2019/01/19 <https://7yue.in>
 """
 
 from collections import namedtuple
@@ -30,9 +30,6 @@ Meta = namedtuple('meta', ['auth', 'module'])
 # 记录路由函数的权限和模块信息
 route_meta_infos = {}
 
-# config for Lin plugins
-# we always access config by flask, but it dependents on the flask context
-# so we move the plugin config here,which you can access config more convenience
 
 gigi_config = Config()
 
@@ -190,7 +187,7 @@ class Jian(object):
 
 
 class Manager(object):
-    """ manager for lin """
+    """ manager for Jian """ 
 
     # 路由函数的meta信息的容器
     ep_meta = {}
@@ -264,12 +261,6 @@ def get_manager():
             return app.extensions['manager']
 
 
-# 暂时废弃
-# class GroupsUsers(db.Model):
-#     __tablename__ = 'lin_groups_users'
-#     id = Column(Integer(), primary_key=True)
-#     user_id = Column('user_id', Integer(), ForeignKey('lin_user.id'))
-#     group_id = Column('group_id', Integer(), ForeignKey('lin_group.id'))
 
 
 class User(UserInterface, db.Model):
@@ -295,11 +286,6 @@ class User(UserInterface, db.Model):
             self.password = new_password
             return True
         return False
-
-    # : user -> group  many to many
-    # 暂时废弃
-    # groups = relationship('Group', secondary='lin_groups_users',
-    #                       backref=backref('users', lazy='dynamic'))
 
 
 class Group(GroupInterface):

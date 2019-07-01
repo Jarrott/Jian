@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 """
-@ Created by Seven on  2019/01/19 <https://www.soo9s.com>
+@ Created by Seven on  2019/01/19 <https://7yue.in>
 """
 
 import json
