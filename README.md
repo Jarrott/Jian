@@ -129,3 +129,4 @@ def register_user():
 ## 下个版本开发计划
 
 - [ ] 加入Swagger文档.
+- [ ] 文件上传模块.
