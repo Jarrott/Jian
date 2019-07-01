@@ -5,6 +5,9 @@
   <img src="https://img.shields.io/badge/Flask-1.0.2-green.svg" alt="flask version" data-canonical-src="https://img.shields.io/badge/Flask-1.0.2-green.svg" style="max-width:100%;"></a>
   <a href="https://www.python.org" rel="nofollow"><img src="https://img.shields.io/badge/Python-%3E3.5-yellowgreen.svg" alt="Python version" data-canonical-src="https://img.shields.io/badge/Python-%3E3.5-yellowgreen.svg" style="max-width:100%;"></a>
 </p>
+<p align="center">
+  <a href="#Jian">简介</a>&nbsp;|&nbsp;<a href="#更新计划">更新计划</a>
+</p>
 
 # Jian
 对Flask项目中一些常用第三方进行封装.
@@ -16,6 +19,7 @@
  - Route_meta
  - Exception
  - Log
+
 对这些优秀的第三方库进行二次开发,使更贴合我们项目中的使用.
 
 
@@ -126,7 +130,7 @@ def register_user():
 
 ```
 
-## 下个版本开发计划
+## 更新计划
 
 - [ ] 加入Swagger文档.
 - [ ] 文件上传模块.
